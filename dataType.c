@@ -16,5 +16,33 @@ int  main(){
 
     printf("bool型大小:%d\n",sizeof(bool));
 
+
+    //结构体 
+    struct student
+    {
+        int  id;
+        char * name;
+
+    };
+    
+    struct student li= {10,"liutengfei"};
+    printf("id:%d\n",li.id);
+    printf("id:%s\n",li.name);
+    //枚举
+    enum weeek{
+        a,
+        b,
+        c
+
+    };
+    //共用体 联合体
+    union data
+    {
+        int  i;
+        char  j;
+    };
+    
+
+
     return 0;
 }
